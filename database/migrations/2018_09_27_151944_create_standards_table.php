@@ -17,7 +17,8 @@ class CreateStandardsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('specialization_id');
             $table->unsignedinteger('subject_id');
-            $table->integer('hours_per_week');
+            $table->integer('year');
+            $table->integer('semester');
             $table->timestamps();
             $table->foreign('specialization_id')->references('id')->on('specializations');
             $table->foreign('subject_id')->references('id')->on('subjects');

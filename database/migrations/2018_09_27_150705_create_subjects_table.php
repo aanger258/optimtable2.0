@@ -17,6 +17,7 @@ class CreateSubjectsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
+            $table->string('hours_per_week');
             $table->timestamps();
         });
     }
