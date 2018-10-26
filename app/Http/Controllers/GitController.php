@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class GitController extends Controller
 {
-    //
+	public function index(){
+		return "ceva";
+	}
 }
